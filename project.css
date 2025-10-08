@@ -1,0 +1,258 @@
+ html,body{
+    height: 100%;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+}
+.nav_container{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    
+}
+.nav_container a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "Inconsolata", monospace;
+    }
+
+.item{
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+.item:hover{
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+.bg-container{
+    width: 100%;
+    height: 74%;
+    background-image:url("https://www.w3schools.com/w3images/coffeehouse.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+.text-container{
+font-size: 6rem;
+line-height: 120px;
+color: white;
+text-align: center;
+}
+.text-container2{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 1.4rem;
+
+    
+}
+.text-container2>p{
+    background-color: black;
+    color: 5px;
+    padding: 5px;
+    color: white;
+}
+.text-container3{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.4rem;
+    color: white; 
+}
+.text-container3>p{
+    color: white;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.main>.main-container{
+    width: 40%;
+    /* border: 2px solid black;
+    height:1000px ; */
+
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.about-container>p{
+
+    background-color: black;
+    color: white;
+    padding: 5px;
+    letter-spacing: 8px;
+    width: fit-content;
+    margin: 50px 0px;
+
+}
+.para-container>p{
+    text-align: justify;
+    margin:30px 0px ;
+
+}
+.para-container2>p{
+    text-align: justify;
+    margin:10px 0px ;
+
+}
+.chef-container{
+    margin: 30px 0px;
+    border-top-color: rgba(82, 82, 86, 0.978);
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding: 10px;
+    background-color: aquamarine;
+
+}
+.chef-container>p{
+    margin: 20px 0px;
+}
+.image-container>img{
+    width: 100%;
+    filter:grayscale(50%);
+
+}
+.open,.address{
+ margin:20px 0px ;
+}
+.eat-container>h4,p{
+margin: 20px 0px;
+}
+.drink-container>h4,p{
+margin: 20px 0px;
+}
+.eat-container{
+    display: none;
+    padding: 20px;
+}
+.drink-container{
+    display: none;
+    padding: 20px;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    text-align:center ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-container>label{
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+
+
+}
+.btn-container>label:hover{
+     background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+#eat:checked~.eat-container{
+    display:inline-block ;
+}
+#drink:checked~.drink-container{
+    display:inline-block ;
+}
+#eat,#drink{
+    display: none;
+}
+.food-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.image-container2{
+    margin: 40px 0px;
+   
+}
+.image-container2>img{
+ width: 100%;
+ filter:grayscale(50%);
+ }
+ .image-container3{
+    margin: 10px 0px;
+
+ }
+ .image-container3>img{
+  width: 100%;
+  filter:grayscale(50%);
+ }
+ .para-container3{
+    margin: 20px 0px;
+
+ }.para-container2{
+    text-align: justify;
+    line-height: 20px;
+
+ }
+ .para-container3>p>span{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+
+ }
+ .form-container{
+    width: 100%;
+ }
+ .form-container>input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+
+ }
+ .input-btn>input{
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    letter-spacing: 2px;
+ }
+ .input-btn>input:hover{
+    background-color: grey;
+    color: black;
+    border: 0px solid;
+ }
+  .input-btn>input::placeholder{
+    letter-spacing: 5px;
+    color: lightgreen;
+  }
+  .footer-container{
+    text-align: center;
+    padding: 30px;
+    background-color: gray;
+    margin: 20px 0px 0px 0px;
+  }
+ .footer-container>p>a{
+    
+    color: black;
+ }
+ .footer-container>p{
+    font-size: 1.5rem;
+ }
